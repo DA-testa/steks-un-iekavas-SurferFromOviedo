@@ -27,8 +27,8 @@ def main():
     text = input()
     mismatch = find_mismatch(text)
     if mismatch == None:
-        print("Success")
-    else: print(str(mismatch.position))
+        print("Nothing")
+    else: print(mismatch.position)
 
 
 if __name__ == "__main__":
