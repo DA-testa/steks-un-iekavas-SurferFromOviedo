@@ -27,7 +27,7 @@ def main():
     text = input()
     mismatch = find_mismatch(text)
     if mismatch == None:
-        print("Nothing")
+        print("4")
     else: print(mismatch.position)
 
 
