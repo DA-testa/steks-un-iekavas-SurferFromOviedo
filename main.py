@@ -26,9 +26,9 @@ def find_mismatch(text):
 def main():
     text = input()
     mismatch = find_mismatch(text)
-    if not mismatch:
-        print("Success")
-    else: print(mismatch.position)
+    if mismatch:
+        print(mismatch.position)
+    else: print("Success")
 
 
 if __name__ == "__main__":
