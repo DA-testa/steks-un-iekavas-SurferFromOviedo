@@ -20,6 +20,8 @@ def find_mismatch(text):
                     opening_brackets_stack.pop()
                     break
                 else: return Bracket(next, i + 1)
+    if len(opening_brackets_stack) == 1:
+        return opening_brackets_stack[0]
 
 def main():
     text = input()
