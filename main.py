@@ -24,9 +24,16 @@ def find_mismatch(text):
         return "Success"
 
 def main():
-        text1 = input()
+    text1 = input()
+    if text1 == "I":
         text = input()
-        print(find_mismatch(text))
+    elif text1 == "F":
+        file_path = input()
+        file = open(file_path, "r")
+        text_file = file.readlines()
+        text = text_file[0]
+    print(find_mismatch(text))
+
 
 if __name__ == "__main__":
     main()
