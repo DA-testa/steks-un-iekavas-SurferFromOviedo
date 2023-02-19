@@ -22,16 +22,11 @@ def find_mismatch(text):
         return opening_brackets_stack[0].position
     if len(opening_brackets_stack) == 0:
         return "Success"
+    else: return opening_brackets_stack[0].position
 
 def main():
     text1 = input()
-    if text1 == "I":
-        text = input()
-    elif text1 == "F":
-        file_path = input()
-        file = open(file_path, "r")
-        text_file = file.readlines()
-        text = text_file[0]
+    text = input()
     print(find_mismatch(text))
 
 
