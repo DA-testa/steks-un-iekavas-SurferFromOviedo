@@ -28,7 +28,6 @@ def main():
         if text1 == "I":
             text = input()
             print(find_mismatch(text))
-
         elif text1 == "F":
             file_path = input()
             file = open(file_path, "r")
