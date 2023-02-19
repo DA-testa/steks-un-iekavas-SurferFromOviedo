@@ -25,8 +25,14 @@ def find_mismatch(text):
     else: return opening_brackets_stack[0].position
 
 def main():
-    text1 = input()
     text = input()
+    if "I" in text:
+        text = input()
+    elif "F" in text:
+        file_path = input()
+        file = open(file_path, "r")
+        text_file = file.readlines()
+        text = text_file[0]
     print(find_mismatch(text))
 
 if __name__ == "__main__":
