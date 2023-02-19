@@ -31,7 +31,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    print(find_mismatch(text))
-
-if __name__ == "__main__":
-    main()
