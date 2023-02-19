@@ -29,10 +29,8 @@ def main():
             text = input()
             print(find_mismatch(text))
         elif text1 == "F":
-            file_path = input()
-            file = open(file_path, "r")
-            text = file.readlines()
-            print(find_mismatch(text[0]))
+            text = input()
+            print(find_mismatch(text))
 
 if __name__ == "__main__":
     main()
